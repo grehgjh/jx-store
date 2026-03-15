@@ -621,6 +621,139 @@
             border-radius: 50px;
             transition: all 0.3s;
         }
+        /* تحسين عرض التلفون */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 10px !important;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem !important;
+        margin: 5px 0 !important;
+    }
+    
+    .logo h1 a button {
+        font-size: 14px !important;
+        padding: 5px 10px !important;
+        margin: 5px 0 !important;
+    }
+    
+    nav ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+    }
+    
+    nav ul li {
+        margin: 5px !important;
+    }
+    
+    nav ul li a {
+        font-size: 16px !important;
+        padding: 8px 12px !important;
+        background: rgba(118, 75, 162, 0.1);
+        border-radius: 50px;
+        display: inline-block;
+    }
+    
+    .hero {
+        padding: 150px 20px 80px !important;
+        margin-top: 120px !important;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    .hero p {
+        font-size: 1.1rem !important;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    
+    .game-card {
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 350px !important;
+    }
+    
+    .game-image {
+        height: 180px !important;
+    }
+    
+    .game-info {
+        padding: 15px !important;
+    }
+    
+    .game-info h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .price {
+        font-size: 1.2rem !important;
+    }
+    
+    .btn-buy {
+        padding: 8px 15px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+    
+    .footer-section h3::after {
+        right: 50% !important;
+        transform: translateX(50%) !important;
+    }
+    
+    .social-links {
+        justify-content: center !important;
+    }
+    
+    .package-card::before {
+        font-size: 0.7rem !important;
+        padding: 3px 10px !important;
+        top: 5px !important;
+        right: 5px !important;
+    }
+}
+
+/* تحسين للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .btn {
+        padding: 10px 20px !important;
+        font-size: 1rem !important;
+    }
+    
+    .game-card {
+        max-width: 300px !important;
+    }
+    
+    nav ul li a {
+        font-size: 14px !important;
+        padding: 5px 10px !important;
+    }
+}
     </style>
 </body>
 </html>
